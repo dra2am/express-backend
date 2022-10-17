@@ -3,6 +3,9 @@ const router = new express.Router();
 const User = require('../models/User')
 // const auth = require("../middleware/auth");
 
+router.get("/", async (req, res)=>{
+  res.send("Home")
+})
 //create user
 router.post("/users/signup", async (req, res) =>{
 
