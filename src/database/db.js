@@ -10,7 +10,7 @@ class Database
     //connect to db
     async function connectDB()
     {
-      return await mysql.createConnection({
+      return await mysql.createPool({
         host: 'us-cdbr-east-06.cleardb.net',
         user: 'bb1dbb2f935d49',
         password: 'd9c19dd5',
