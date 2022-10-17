@@ -25,7 +25,7 @@ class Database
   connect=async()=>
   {
     try {
-      (await this.createConnection).connect()
+      (await this.createConnection).getConnection()
       console.log("Successfully connected to database!")
     } catch (error) {
       console.log(error)
